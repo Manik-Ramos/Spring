@@ -2,9 +2,11 @@ package com.legitboss.springdemo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component("footballCoach")
+@Scope("prototype")
 public class FootballCoach implements Coach {
 
 	@Autowired
