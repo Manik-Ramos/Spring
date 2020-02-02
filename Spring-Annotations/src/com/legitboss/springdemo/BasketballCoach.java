@@ -5,26 +5,31 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
-public class TennisCoach implements Coach {
+public class BasketballCoach implements Coach {
 
+	//field Autowiring
 	@Autowired
 	@Qualifier("randomFortuneServiceImpl")
 	private FortuneService fortuneService;
 	
-	//constructor Autowiring
+	public BasketballCoach() {
+		System.out.println("Autowiring field in BasketBall.java");
+	}
+	
+	//Any method Autowiring
 	@Autowired
-	public TennisCoach() {
-		System.out.println("Autowiring Constructors in TennisCoach.java");
+	public String doSomeSimpleStuff() {
+		return "Autowiring any method in BasketBall.java";
 	}
 	
 	@Override
 	public String getWorkOut() {
-		return "Practice Backhand and Forehand 15 mins each";
+		return "Perform dunk for 15 mins";
 	}
-	
+
 	@Override
 	public String getFortune() {
-		return fortuneService.getFortune() + " tennis player";
+		return fortuneService.getFortune() + " basketball player";
 	}
 
 }
