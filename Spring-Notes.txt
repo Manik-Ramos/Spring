@@ -1,0 +1,96 @@
+Documentation 
+	www.spring.io
+	
+Features
+	- Spring Cloud (Cloud Computing)
+	- Spring Data(Database)
+	- Spring Batch(Batch Processing)
+	- Spring Security
+	- Spring Android
+	- Spring Web Flow
+	- Spring Web Services(Rest & SOAP)
+	- Spring LDAP
+	
+Spring Container
+	- Three ways to configure container.
+	  i)   ApplicationContext
+	  ii)  Component Scan
+	  iii) Configuration using Java Source code.
+	  
+	1.Inversion of Control
+		- Outsourcing & maintaining objects.
+		
+			a. Create the java bean.
+			b. Create the container.
+			c. Retrieve bean from the container.
+		
+	2.Dependency Injection
+		- Outsourcing requirements and features of an object.
+		
+			a. Constructor Dependency Injection
+				i) Create interface and class(for service)
+			   ii) Create constructor for the class
+			  iii) Create dependency for the class with the service
+			b. Setter Dependency Injection
+				i) Create Setter methods for properties of classes.
+			   ii) Inject the dependencies to the properties
+	
+	3. Bean Scopes
+		- Defining the lifetime of bean and its usage.
+		- Default scope is Singleton.
+		
+		a. Singleton
+			- shares same reference for any number of objects created for the class.
+		b. Prototype
+			- creates different references for objects created for the class.
+		c. request
+		d. session
+		e. global session
+	
+	4. Bean Life Cycle
+		a. init-method
+			- to perform tasks like connecting to a DB, file, service etc
+		b. destroy-method.
+			- to perform tasks like disconnectivity from a DB, service etc.
+			
+	5. Spring Annotations
+		- Used to provide metadata about a class.
+		- to minimise the xml configuration
+		
+	6. Autowiring
+		a. Constructor Autowiring
+			- autowiring a constructor with a service, spring scans for the implementation of the service and injects it to the constructor.
+				i) Create interface and class(for service)
+			   ii) Create constructor for the class
+			  iii) Autowire constructor with the service using @Autowired
+			  
+			Note: If there are more than one implementation of the service, Spring throws a "NoUniqueBeanDefinitionException". 
+				  So to overcome this, the implementation that has to be referred must be specified with the @Qualifier("beanId").
+		
+		b. Setter Autowiring
+				i) Create Setter methods for properties of classes.
+			   ii) Inject the dependencies to the properties using @Autowired
+			   
+		c. Field Autowiring
+				i) Create fields for classes.
+			   ii) Inject the dependencies to the fields using @Autowired
+			   
+	7. Java Source Configuration
+		a. Write methods to expose bean.
+		b. Inject dependencies.
+		c. Read Spring Java Configuration class
+		d. Retrieve Bean from the class.
+		
+Spring MVC                                                Model                     Model
+	WebBrowser -> Front Controller(Dispatcher Servlet) -----------> Controller --------------> View Template
+	
+	Model - Holds Data
+	Controller - Makes call to database, consumes services.
+	View - Reads data from model and displays it (Eg:JSP, Thymeleaf,Groovy)
+	
+	Steps:
+		1. Create a dispatcher servlet for the application.
+		2. Create mappings for various services.
+		3. Create xml configuration file and create component scanning.
+		4. Create annotation driven support for the application for converting, formatting and validating components.
+		5. Create MVC View resolver to locate where the file is located with the folder as prefix and extension as the suffix.
