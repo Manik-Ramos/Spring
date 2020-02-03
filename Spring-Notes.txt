@@ -91,7 +91,8 @@ Spring MVC                                                Model                 
 	
 	Model - Holds Data
 	Controller - Makes call to database, consumes services.
-	View - Reads data from model and displays it (Eg:JSP, Thymeleaf,Groovy)
+	View - Reads data from model and displays it 
+		Note: Some of the view templates available are (Eg:JSP,JSTL,Thymeleaf,Groovy
 	
 	Steps to create Web Project supporting MVC:
 		1. Create a dispatcher servlet for the application.
@@ -106,3 +107,5 @@ Spring MVC                                                Model                 
 		3. Create mapping to the method.
 		4. Return the view name of the page to be rendered.
 		5. Display the page with its content.
+		
+	
