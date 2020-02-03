@@ -2,10 +2,9 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-		<title>Spring MVC Home Page</title>
+		<title>Hello User</title>
 	</head>
 	<body>
-		<h1>Welcome to Spring MVC</h1>
-		<a href="displayForm">Hello World Form</a>
+		<p>Hello ${ param.name }</p>	
 	</body>
 </html>

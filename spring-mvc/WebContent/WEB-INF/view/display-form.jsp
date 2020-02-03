@@ -2,10 +2,12 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-		<title>Spring MVC Home Page</title>
+		<title>Form</title>
 	</head>
 	<body>
-		<h1>Welcome to Spring MVC</h1>
-		<a href="displayForm">Hello World Form</a>
+		<form action="processForm" method="GET">
+			<input type="text" name="name" placeholder="Enter Name">
+			<button type="submit">Submit</button>
+		</form>
 	</body>
 </html>
