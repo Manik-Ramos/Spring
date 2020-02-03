@@ -81,6 +81,11 @@ Spring Container
 		c. Read Spring Java Configuration class
 		d. Retrieve Bean from the class.
 		
+		
+		
+		
+		
+		
 Spring MVC                                                Model                     Model
 	WebBrowser -> Front Controller(Dispatcher Servlet) -----------> Controller --------------> View Template
 	
@@ -88,9 +93,16 @@ Spring MVC                                                Model                 
 	Controller - Makes call to database, consumes services.
 	View - Reads data from model and displays it (Eg:JSP, Thymeleaf,Groovy)
 	
-	Steps:
+	Steps to create Web Project supporting MVC:
 		1. Create a dispatcher servlet for the application.
 		2. Create mappings for various services.
 		3. Create xml configuration file and create component scanning.
 		4. Create annotation driven support for the application for converting, formatting and validating components.
 		5. Create MVC View resolver to locate where the file is located with the folder as prefix and extension as the suffix.
+	
+	Creating a Controller to listen to a request:
+		1. Create controller class.
+		2. Create controller method.
+		3. Create mapping to the method.
+		4. Return the view name of the page to be rendered.
+		5. Display the page with its content.
