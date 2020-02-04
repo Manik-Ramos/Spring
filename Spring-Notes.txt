@@ -108,4 +108,21 @@ Spring MVC                                                Model                 
 		4. Return the view name of the page to be rendered.
 		5. Display the page with its content.
 		
+	Notes:
+		- Model 
+			Holds data that is transferred between controllers.
+			.addAttribute("key",value) is used to set the model with the data
+		
+		- @RequestMapping is done to controllers to avoid conflicts in relative path to the mapping methods.
+	
+		- @RequestParam("key") is used to obtain the values directly from the servlet request.
+		
+		- @ModelAttribute("nameOfKeyUsedInModel") is used to initialize the objects and transfer data between controllers.
+		
+		- modelAttribute in the view Template refers to the key of the object.
+		
+		- path refers to the field/property of the object.
+		
+		- form tags make use of the jstl and jsp libraries.
+		
 	
