@@ -5,6 +5,8 @@
 		<title>Hello User</title>
 	</head>
 	<body>
-		<p>Hello ${ param.name }</p>	
+		<p>Hello ${ param.name }</p>
+		
+		<p>Uppercase of your name is ${result}</p>		
 	</body>
 </html>
