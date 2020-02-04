@@ -6,6 +6,6 @@
 	</head>
 	<body>
 		<h1>Welcome to Spring MVC</h1>
-		<a href="displayForm">Hello World Form</a>
+		<a href="hello/displayForm">Hello World Form</a>
 	</body>
 </html>

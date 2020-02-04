@@ -5,7 +5,7 @@
 		<title>Form</title>
 	</head>
 	<body>
-		<form action="processFormData" method="GET">
+		<form action="manipulateFormDataUsingRequestParam" method="GET">
 			<input type="text" name="name" placeholder="Enter Name">
 			<button type="submit">Submit</button>
 		</form>
