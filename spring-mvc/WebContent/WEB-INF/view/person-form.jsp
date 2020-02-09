@@ -20,7 +20,10 @@
 				<form:option value="Australia" label="AUS"/>
 				<form:option value="New Zealand" label="NZ"/>
 			</form:select>
-			
+			Post Code:<form:input type="text" path="postCode" />
+			<form:errors path="postCode" cssClass="error"></form:errors>
+			Age:<form:input path="age"/>
+			<form:errors path="age" cssClass="error"></form:errors>
 			Gender:
 			<form:radiobutton path="gender" label="Male" value="Male"/>
 			<form:radiobutton path="gender" label="Female" value="Female"/>

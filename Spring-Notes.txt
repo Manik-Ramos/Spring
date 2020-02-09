@@ -130,3 +130,11 @@ Hibernate Validator: http://www.hibernate.org/validator
 	@Valid is used to validate the form and store the result in BindingResult internally,
 	Note: BindingResult should immediately follow the Bean in the processing method argument.
 	
+	Java Regular Expressions: https://docs.oracle.com/javase/tutorial/essential/regex/
+	
+	@NotNull
+	@Size
+	@Min
+	@Max
+	@Pattern
+	

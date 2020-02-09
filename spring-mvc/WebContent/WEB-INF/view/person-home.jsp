@@ -8,7 +8,9 @@
 	<body>
 		<p>Welcome Aboard</p>
 		<p>Your username is ${person.firstName}-${person.lastName}</p>
+		<p>Age: ${person.age}</p>
 		<p>Country: ${person.country} </p>
+		<p>Post Code: ${person.postCode}</p>
 		<p>Gender : ${person.gender}</p>
 		<p>Skills:</p>
 		<ul>
