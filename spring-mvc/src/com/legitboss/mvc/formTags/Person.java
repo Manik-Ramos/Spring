@@ -2,10 +2,15 @@ package com.legitboss.mvc.formTags;
 
 import java.util.List;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 public class Person {
 
 	private String firstName;
 	
+	@NotNull(message="is required")
+	@Size(min=1,message="is required")
 	private String lastName;
 	
 	private String country;
@@ -14,7 +19,7 @@ public class Person {
 	
 	private List<String> skills;
 	
-	public Person() {	}
+	public Person() {}
 
 	public String getFirstName() {
 		return firstName;

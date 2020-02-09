@@ -125,4 +125,8 @@ Spring MVC                                                Model                 
 		
 		- form tags make use of the jstl and jsp libraries.
 		
+Hibernate Validator: http://www.hibernate.org/validator
+	This is used for validating user forms.
+	@Valid is used to validate the form and store the result in BindingResult internally,
+	Note: BindingResult should immediately follow the Bean in the processing method argument.
 	
