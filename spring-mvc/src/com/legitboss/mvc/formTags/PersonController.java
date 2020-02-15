@@ -29,7 +29,6 @@ public class PersonController {
 	
 	@RequestMapping("processForm")
 	public String processForm(@Valid @ModelAttribute("person") Person person, BindingResult bindRes,Model model ){
-		System.out.println("|"+person.getLastName()+"|");
 		if(bindRes.hasErrors()) {
 			return "person-form";
 		} else {

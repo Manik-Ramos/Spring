@@ -138,3 +138,10 @@ Hibernate Validator: http://www.hibernate.org/validator
 	@Max
 	@Pattern
 	
+Custom Validator:
+	* Create a Annotation class that contains the various parameters with its default values.
+		The base annotation to this interface are @interface, @Constraint, @Target, @Retention
+	* Implement this interface with a class that implements ConstraintValidator<AnnotationInterface,type>
+	* isValid method contains the business logic to validate.
+	* Add this annotation to the Bean property
+	

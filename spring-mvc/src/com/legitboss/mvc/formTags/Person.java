@@ -1,12 +1,12 @@
 package com.legitboss.mvc.formTags;
 
 import java.util.List;
-
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
+import com.legitboss.mvc.customValidator.CustomValidation;
 
 public class Person {
 
@@ -20,6 +20,9 @@ public class Person {
 	@Min(value=18,message="Should be a minimum of 18 years")
 	@Max(value=22,message="Should be a maximum of 22 years")
 	private Integer age;
+	
+	@CustomValidation(value="111",message="must start with 111")
+	private String registerNumber;
 	
 	private String country;
 	
@@ -87,4 +90,13 @@ public class Person {
 	public void setPostCode(String postCode) {
 		this.postCode = postCode;
 	}
+
+	public String getRegisterNumber() {
+		return registerNumber;
+	}
+
+	public void setRegisterNumber(String registerNumber) {
+		this.registerNumber = registerNumber;
+	}
+	
 }

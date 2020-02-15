@@ -20,6 +20,8 @@
 				<form:option value="Australia" label="AUS"/>
 				<form:option value="New Zealand" label="NZ"/>
 			</form:select>
+			Register Number:<form:input path="registerNumber"/>
+			<form:errors path="registerNumber" cssClass="error" />
 			Post Code:<form:input type="text" path="postCode" />
 			<form:errors path="postCode" cssClass="error"></form:errors>
 			Age:<form:input path="age"/>
